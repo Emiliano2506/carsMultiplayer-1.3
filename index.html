@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Librerias -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+    <!-- Alerta -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lib/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/sweetalert.css" />
+
+    <link rel = "stylesheet" href="style.css"></link>
+
+    <!--divicion-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--conectar con la base de datos-->
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <!--codigo de la mase de datos-->
+    <script>
+      var firebaseConfig = {
+      apiKey: "AIzaSyCS_ZgdafjuDTUrDT38qtp8nijCMuu9dpg",
+      authDomain: "carsmultiplayer-285fe.firebaseapp.com",
+      databaseURL: "https://carsmultiplayer-285fe-default-rtdb.firebaseio.com",
+      projectId: "carsmultiplayer-285fe",
+      storageBucket: "carsmultiplayer-285fe.firebasestorage.app",
+      messagingSenderId: "898716475348",
+      appId: "1:898716475348:web:261df8b74922a9bf590041"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+  <body>
+    <script src = "./JS/Form.js"></script>
+    <script src = "./sketch.js"></script>
+    <script src = "./JS/game.js"></script>
+    <script src = "./JS/players.js"></script>
+  </body>
+</html>
